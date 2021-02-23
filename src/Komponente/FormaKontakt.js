@@ -1,5 +1,4 @@
 import React from 'react';
-/* import axios from 'axios'; */
 
 class FormaKontakt extends React.Component {
 
@@ -10,7 +9,6 @@ class FormaKontakt extends React.Component {
             comment: '',
         }
     }
-
 
     resetForm() {
         this.setState({ email: '', coment: '' })
@@ -35,8 +33,7 @@ class FormaKontakt extends React.Component {
             
             </div>
         );
-    }
-    
+    }    
 
     onEmailChange(event) {
         this.setState({ email: event.target.value })

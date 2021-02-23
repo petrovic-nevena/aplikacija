@@ -3,34 +3,24 @@ import {
     Nav,
     NavLink,
     Bars,
-    NavMenu,
-    NavBtn,
-    NavBtnLink
+    NavMenu    
   } from './NavbarElementi';
 
 const Navbar = () => {
     return (
         <Nav>
         <NavLink to='/'>
-          <h1>Yamifood</h1>
+          <h2>Yamifood</h2>
         </NavLink>
         <Bars />        
         <NavMenu>
           <NavLink to='/home' activeStyle>
-            Pocetna
+            Početna
           </NavLink>          
           <NavLink to='/contact' activeStyle>
             Kontakt
-          </NavLink>
-          <NavLink to='/sign-up' activeStyle>
-            Sign Up
-          </NavLink>
-          {/* Second Nav */}
-          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-        </NavMenu>
-        <NavBtn>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
-        </NavBtn>
+          </NavLink>                    
+        </NavMenu>        
       </Nav>
     )
 }
